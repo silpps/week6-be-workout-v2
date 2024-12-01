@@ -71,7 +71,7 @@ const deleteWorkout = async (req, res) => {
     return res.status(400).json({error: 'No such workout'})
   }
 
-  res.status(200).json(workout)
+  res.status(204).json(workout)
 }
 
 // update a workout
